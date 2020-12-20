@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Truyen Tranh</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/style1.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous"
+        />
+
+        <!-- jQuery and JS bundle w/ Popper.js, font awesome -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- <script src="./js/jquery.waypoints.min.js"></script> -->
+
+        <script src="./js/scrip.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/0fda98e415.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">
+                                Chức năng này chưa có!!!
+                            </h4>
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                            >
+                                &times;
+                            </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">vui lòng đợi update</div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- top bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top-bar">
+            <a class="navbar-brand col-md-2" href="#">
+                <img src="./img/logo.png" alt="logo" />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+                class="collapse navbar-collapse justify-content-between"
+                id="navbarSupportedContent col-md-8"
+            >
+                <div class="input-group">
+                    <input
+                        class="form-control py-2 border-right-0 border"
+                        type="search"
+                        value=""
+                        id="example-search-input"
+                        placeholder="Tìm kiếm"
+                    />
+                    <span class="input-group-append bg-white">
+                        <button
+                            class="btn btn-outline-secondary border-left-0 border"
+                            type="button"
+                        >
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <ul class="navbar-nav d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#myModal"
+                            >Lịch sử <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#myModal"
+                            >Theo dõi <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- menu bar -->
+        <section class="fixed">
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-warning menu-bar"
+            >
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle mr-4"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Thể loại
+                            </a>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle mr-4"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Sắp xếp
+                            </a>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                >
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-4" href="#ConGai">Con gái</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-4" href="#ConTrai"
+                                >Con trai</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link mr-4"
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                >Tìm truyện</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link mr-4"
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                >Lịch sử</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link mr-4"
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                >Theo dõi</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link mr-4"
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                >Thảo luận</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link mr-4"
+                                href="https://www.facebook.com/profile.php?id=100012573963650"
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                >Fanpagae</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <!-- eee -->
+        <div class="bg-white rounded p-3 border shadow">
+            <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
+                <p>
+                    <a href="https://truyenvn.com">Đọc truyện Tranh</a
+                    ><span class="separator"> &gt; </span
+                    ><span class="last">Ones in-laws virgins</span>
+                </p>
+            </nav>
+            <section class="comic-info mb-4 lh-13">
+                <div class="row">
+                    <div class="col-sm-auto mb-3 mb-sm-0">
+                        <div class="book shadow rounded mx-auto">
+                            <img
+                                class="lazy-load mx-auto"
+                                src="./img/truyen/hen-ho-chon-cong-so_1604845272.jpg"
+                                data-src="https://truyenvn.com/wp-content/uploads/2020/07/truyen-ones-in-laws-virgins-e1595052684239.jpg"
+                                alt="Đọc Truyện Tranh Ones in-laws virgins Chap mới nhất"
+                            />
+                        </div>
+                    </div>
+                    <div class="info col-sm">
+                        <h1 class="name font-15x font-bold">
+                            Ones in-laws virgins
+                        </h1>
+                        <time class="time_small"
+                            >[Cập nhật lúc: 19:23 11/12/2020]</time
+                        >
+                        <div class="meta-data mb-3">
+                            <div class="chapter_new mb-3">
+                                <span class="strong"
+                                    >Chapter mới nhất:
+                                    <a
+                                        target="_blank"
+                                        class="btn btn-outline-warning mr-2 mb-1"
+                                        href="#"
+                                        >Chương 35</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="other_name mb-3">
+                                <span class="strong"
+                                    >Tên khác: Maidens In-Law ; Secret Friend
+                                    (MJJ) ; 사돈 처녀들 ;
+                                    親家四姊妹</span
+                                >
+                            </div>
+                            <div class="author mb-3">
+                                <span class="strong">Tác giả: </span>
+                                <a rel="nofollow" href="#">Manjijak</a>
+                            </div>
+                            <div class="status mb-3">
+                                <span class="strong">Tình trạng: </span> Đang
+                                Cập Nhật
+                            </div>
+                            <div class="new-chap mb-3">
+                                <span class="strong">Số chương: </span> 35
+                            </div>
+                            <div class="view-times mb-2">
+                                <span class="strong">Lượt xem: </span> 5,819
+                            </div>
+                            <div class="star-rating mb-2">
+                                <span class="strong">Đánh giá: </span>
+                                <div id="rating">
+                                    <input
+                                        type="radio"
+                                        id="star5"
+                                        name="rating"
+                                        value="5"
+                                    />
+                                    <label
+                                        class="full"
+                                        for="star5"
+                                        title="Awesome - 5 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star4half"
+                                        name="rating"
+                                        value="4 and a half"
+                                    />
+                                    <label
+                                        class="half"
+                                        for="star4half"
+                                        title="Pretty good - 4.5 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star4"
+                                        name="rating"
+                                        value="4"
+                                    />
+                                    <label
+                                        class="full"
+                                        for="star4"
+                                        title="Pretty good - 4 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star3half"
+                                        name="rating"
+                                        value="3 and a half"
+                                    />
+                                    <label
+                                        class="half checked"
+                                        for="star3half"
+                                        title="Meh - 3.5 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star3"
+                                        name="rating"
+                                        value="3"
+                                    />
+                                    <label
+                                        class="full checked"
+                                        for="star3"
+                                        title="Meh - 3 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star2half"
+                                        name="rating"
+                                        value="2 and a half"
+                                    />
+                                    <label
+                                        class="half checked"
+                                        for="star2half"
+                                        title="Kinda bad - 2.5 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star2"
+                                        name="rating"
+                                        value="2"
+                                    />
+                                    <label
+                                        class="full checked"
+                                        for="star2"
+                                        title="Kinda bad - 2 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star1half"
+                                        name="rating"
+                                        value="1 and a half"
+                                    />
+                                    <label
+                                        class="half checked"
+                                        for="star1half"
+                                        title="Meh - 1.5 stars"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="star1"
+                                        name="rating"
+                                        value="1"
+                                    />
+                                    <label
+                                        class="full checked"
+                                        for="star1"
+                                        title="Sucks big time - 1 star"
+                                    ></label>
+                                    <input
+                                        type="radio"
+                                        id="starhalf"
+                                        name="rating"
+                                        value="half"
+                                    />
+                                    <label
+                                        class="half checked"
+                                        for="starhalf"
+                                        title="Sucks big time - 0.5 stars"
+                                    ></label>
+                                </div>
+                            </div>
+                            <div class="genre mb-3">
+                                <a
+                                    target="_blank"
+                                    class="btn btn-outline-warning mr-2 mb-1"
+                                    href="#"
+                                    >Adult</a
+                                ><a
+                                    target="_blank"
+                                    class="btn btn-outline-warning mr-2 mb-1"
+                                    href="#"
+                                    >Manhwa</a
+                                ><a
+                                    target="_blank"
+                                    class="btn btn-outline-warning mr-2 mb-1"
+                                    href="#"
+                                    >Slice Of Life</a
+                                ><a
+                                    target="_blank"
+                                    class="btn btn-outline-warning mr-2 mb-1"
+                                    href="#"
+                                    >Webtoon</a
+                                >
+                            </div>
+                        </div>
+                        <div class="actions mb-2">
+                            <a
+                                href="#"
+                                class="go-reading px-4 py-2 bg-success text-white btn-action d-inline-flex"
+                            >
+                                <span>
+                                    <img
+                                        src="https://truyenvn.com/wp-content/themes/TruyenVN/images/icon-book.png"
+                                        width="20"
+                                        class="mr-2"
+                                        alt="Đọc chap mới nhất"
+                                    />
+                                </span>
+                                <span> Đọc từ đầu </span>
+                            </a>
+                            <a
+                                rel="nofollow"
+                                href="#chapterList"
+                                class="go-chapterList px-4 py-2 bg-primary text-white btn-action d-inline-flex"
+                            >
+                                <span>
+                                    <img
+                                        src="https://truyenvn.com/wp-content/themes/TruyenVN/images/icon-plane.png"
+                                        width="20"
+                                        class="mr-2"
+                                        alt="Danh sách Chap"
+                                    />
+                                </span>
+                                <span> Ds.chương </span>
+                            </a>
+                        </div>
+                        <div class="comic-description lh-16 long-desc">
+                            <div class="inner border-bottom mb-1">
+                                Truyện Ones in-laws virgins là một bộ truyện
+                                tranh người lớn của Hàn Quốc. Truyện kể về mối
+                                quan hệ mờ ám giữa chị dâu và em chồng. Hai anh
+                                em nam chính ngay từ nhỏ đã không thân thiết.
+                                Người anh luôn ghét bỏ em mình, còn người em thì
+                                luôn ganh tị khi những người con gái xung quanh
+                                anh đều chỉ để ý tới người anh trai. Sau khi
+                                trưởng thành, cái bóng của người anh vẫn còn đeo
+                                bám người em. Cho tới một ngày, chị dâu mời
+                                người em tới sống tại nhà mình. Ngôi nhà giờ rộn
+                                rã hơn vì có nhiều chuyển tới sống, thế nhưng
+                                những mối quan hệ cũng từ đó mà trở nên rối rắm
+                                hơn. Bên cạnh mối quan hệ mờ ám của chị dâu và
+                                em chồng thì còn có những mối quan hệ cũng gay
+                                cấn khác không kém là của anh rể và các cô em
+                                vợ.
+                            </div>
+                            <div class="text-center overflow-hidden">
+                                <a
+                                    rel="nofollow"
+                                    href="#"
+                                    class="bg-warning d-inline-block font-9x text-white btn-action px-3 py-1 go-long-desc"
+                                    >Xem thêm</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="alert alert-warning lh-13 text-dark">
+                <strong>Cảnh báo độ tuổi:</strong> Truyện bạn đang xem có thể có
+                nội dung và hình ảnh nhạy cảm, không phù hợp với lứa tuổi của
+                bạn. Nếu bạn dưới 16 tuổi, vui lòng chọn một truyện khác để giải
+                trí. Chúng tôi sẽ không chịu trách nhiệm liên quan nếu bạn bỏ
+                qua cảnh báo này.
+            </div>
+            <section id="chapterList">
+                <div class="section-heading font-15x mb-5">
+                    <div class="inner text-warning d-flex align-items-center">
+                        <img
+                            class="mr-2"
+                            width="25"
+                            src="https://truyenvn.com/wp-content/themes/TruyenVN/images/icon-stars-2.png"
+                            alt="..."
+                        />
+                        <h2 class="font-semi-bold">Danh sách chương</h2>
+                    </div>
+                </div>
+                <div
+                    class="mb-6 chap-list px-1 pt-6 pb-3 shadow rounded border"
+                >
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 13</span> <span>23/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 12</span> <span>23/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 11</span> <span>23/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 10</span> <span>23/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 9</span> <span>23/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 8</span> <span>23/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 7</span> <span>23/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 6</span> <span>18/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 5</span> <span>18/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 4</span> <span>18/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 3</span> <span>18/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 2</span> <span>18/07/2020</span>
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between mb-2 pb-2 border-bottom align-items-center pl-3"
+                    >
+                        <a
+                            target="_blank"
+                            href="#"
+                            class="d-flex justify-content-between w-100"
+                        >
+                            <span>Chương 1</span> <span>18/07/2020</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="form-row mb-8">
+                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                    <div class="entry text-center">
+                        <a
+                            title="Wolf And Mary"
+                            href="#"
+                            class="rounded border overflow-hidden d-flex align-items-center justify-content-center mb-2 position-relative s-thumb bg-dark"
+                            ><div
+                                class="badge position-absolute font-9x text-white font-semi-bold d-flex"
+                            >
+                                <span
+                                    class="date-time p-1 mr-1 rounded bg-info"
+                                >
+                                    <i
+                                        class="fa fa-eye text-blur small mr-1"
+                                    ></i
+                                    >1,802</span
+                                >
+                            </div>
+                            <img
+                                class="lazy-load"
+                                src="https://truyenvn.com/wp-content/themes/TruyenVN/images/load-03.gif"
+                                data-src="https://truyenvn.com/wp-content/uploads/2020/09/truyen-wolf-and-mary-18.jpg"
+                                alt="Đọc truyện Wolf And Mary"
+                            />
+                        </a>
+                        <h2
+                            class="name font-10x lh-13 font-semi-bold"
+                            title="Wolf And Mary 18+"
+                        >
+                            <a href="#"> Wolf And Mary </a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                    <div class="entry text-center">
+                        <a
+                            title="With Teacher"
+                            href="#"
+                            class="rounded border overflow-hidden d-flex align-items-center justify-content-center mb-2 position-relative s-thumb bg-dark"
+                            ><div
+                                class="badge position-absolute font-9x text-white font-semi-bold d-flex"
+                            >
+                                <span
+                                    class="date-time p-1 mr-1 rounded bg-info"
+                                >
+                                    <i
+                                        class="fa fa-eye text-blur small mr-1"
+                                    ></i
+                                    >12,810</span
+                                >
+                            </div>
+                            <img
+                                class="lazy-load"
+                                src="https://truyenvn.com/wp-content/themes/TruyenVN/images/load-03.gif"
+                                data-src="https://truyenvn.com/wp-content/uploads/2020/05/truyen-with-teacher.jpg"
+                                alt="Đọc truyện With Teacher"
+                            />
+                        </a>
+                        <h2
+                            class="name font-10x lh-13 font-semi-bold"
+                            title="With Teacher"
+                        >
+                            <a href="#"> With Teacher </a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                    <div class="entry text-center">
+                        <a
+                            title="Wildcat"
+                            href="#"
+                            class="rounded border overflow-hidden d-flex align-items-center justify-content-center mb-2 position-relative s-thumb bg-dark"
+                            ><div
+                                class="badge position-absolute font-9x text-white font-semi-bold d-flex"
+                            >
+                                <span
+                                    class="date-time p-1 mr-1 rounded bg-info"
+                                >
+                                    <i
+                                        class="fa fa-eye text-blur small mr-1"
+                                    ></i
+                                    >2,868</span
+                                >
+                            </div>
+                            <img
+                                class="lazy-load"
+                                src="https://truyenvn.com/wp-content/themes/TruyenVN/images/load-03.gif"
+                                data-src="https://truyenvn.com/wp-content/uploads/2019/10/wildcat_1475213331.jpg"
+                                alt="Đọc truyện Wildcat"
+                            />
+                        </a>
+                        <h2
+                            class="name font-10x lh-13 font-semi-bold"
+                            title="Wildcat"
+                        >
+                            <a href="#"> Wildcat </a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                    <div class="entry text-center">
+                        <a
+                            title="Widow"
+                            href="#"
+                            class="rounded border overflow-hidden d-flex align-items-center justify-content-center mb-2 position-relative s-thumb bg-dark"
+                            ><div
+                                class="badge position-absolute font-9x text-white font-semi-bold d-flex"
+                            >
+                                <span
+                                    class="date-time p-1 mr-1 rounded bg-info"
+                                >
+                                    <i
+                                        class="fa fa-eye text-blur small mr-1"
+                                    ></i
+                                    >8,157</span
+                                >
+                                <span class="hot bg-danger p-1 rounded"
+                                    >Hot</span
+                                >
+                            </div>
+                            <img
+                                class="lazy-load"
+                                src="https://truyenvn.com/wp-content/themes/TruyenVN/images/load-03.gif"
+                                data-src="https://truyenvn.com/wp-content/uploads/2020/02/21591-widow.jpg"
+                                alt="Đọc truyện Widow"
+                            />
+                        </a>
+                        <h2
+                            class="name font-10x lh-13 font-semi-bold"
+                            title="Widow"
+                        >
+                            <a href="#"> Widow </a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                    <div class="entry text-center">
+                        <a
+                            title="White Angels Get No Rest"
+                            href="#"
+                            class="rounded border overflow-hidden d-flex align-items-center justify-content-center mb-2 position-relative s-thumb bg-dark"
+                            ><div
+                                class="badge position-absolute font-9x text-white font-semi-bold d-flex"
+                            >
+                                <span
+                                    class="date-time p-1 mr-1 rounded bg-info"
+                                >
+                                    <i
+                                        class="fa fa-eye text-blur small mr-1"
+                                    ></i
+                                    >56,769</span
+                                >
+                            </div>
+                            <img
+                                class="lazy-load"
+                                src="https://truyenvn.com/wp-content/themes/TruyenVN/images/load-03.gif"
+                                data-src="https://truyenvn.com/wp-content/uploads/2020/05/truyen-white-angels-get-no-rest.jpg"
+                                alt="Đọc truyện White Angels Get No Rest"
+                            />
+                        </a>
+                        <h2
+                            class="name font-10x lh-13 font-semi-bold"
+                            title="White Angels Get No Rest"
+                        >
+                            <a href="#"> White Angels Get No Rest </a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-md-2 mb-3">
+                    <div class="entry text-center">
+                        <a
+                            title="Weak Point"
+                            href="#"
+                            class="rounded border overflow-hidden d-flex align-items-center justify-content-center mb-2 position-relative s-thumb bg-dark"
+                            ><div
+                                class="badge position-absolute font-9x text-white font-semi-bold d-flex"
+                            >
+                                <span
+                                    class="date-time p-1 mr-1 rounded bg-info"
+                                >
+                                    <i
+                                        class="fa fa-eye text-blur small mr-1"
+                                    ></i
+                                    >6,320</span
+                                >
+                                <span class="hot bg-danger p-1 rounded"
+                                    >Hot</span
+                                >
+                            </div>
+                            <img
+                                class="lazy-load"
+                                src="https://truyenvn.com/wp-content/themes/TruyenVN/images/load-03.gif"
+                                data-src="https://truyenvn.com/wp-content/uploads/2020/06/truyen-weak-point-e1591155808263.jpg"
+                                alt="Đọc truyện Weak Point"
+                            />
+                        </a>
+                        <h2
+                            class="name font-10x lh-13 font-semi-bold"
+                            title="Weak Point"
+                        >
+                            <a href="#"> Weak Point </a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="section-heading font-15x mb-5">
+                <div class="inner text-warning d-flex align-items-center">
+                    <i class="fa fa-comments mr-2"></i>
+                    <span class="font-medium"> Bình luận (109) </span>
+                </div>
+            </div>
+            <form action="#" class="comment-form" data-target=".comment-list">
+                <input type="hidden" name="action" value="z_do_ajax" />
+                <input type="hidden" name="_action" value="push_comment" />
+                <input type="hidden" name="parent" value="0" />
+                <input type="hidden" name="cat" value="12589" />
+                <input type="hidden" name="p" value="562584" />
+                <input type="hidden" name="re_author" value="" />
+                <input type="hidden" name="user_id" value="0" />
+                <div class="form-row mb-3">
+                    <div class="col-sm mb-2 mb-sm-0">
+                        <input
+                            class="shadow"
+                            type="text"
+                            name="name"
+                            placeholder="Họ tên*"
+                            required=""
+                        />
+                    </div>
+                    <div class="col-sm">
+                        <input
+                            class="shadow"
+                            type="email"
+                            name="email"
+                            placeholder="Email*"
+                            required=""
+                        />
+                    </div>
+                </div>
+                <div
+                    class="g-recaptcha"
+                    data-sitekey="6LcR_ssZAAAAAGzTFejZP4_rI7pBWugtFrJWmmDA"
+                >
+                    <div style="width: 304px; height: 78px">
+                        <div>
+                            <iframe
+                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcR_ssZAAAAAGzTFejZP4_rI7pBWugtFrJWmmDA&amp;co=aHR0cHM6Ly90cnV5ZW52bi5jb206NDQz&amp;hl=en&amp;v=NTa-8tBgsAw62CYTJPliVdrV&amp;size=normal&amp;cb=mrt038rdu2wt"
+                                width="304"
+                                height="78"
+                                role="presentation"
+                                name="a-wadw186dyo4f"
+                                frameborder="0"
+                                scrolling="no"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                            ></iframe>
+                        </div>
+                        <textarea
+                            id="g-recaptcha-response"
+                            name="g-recaptcha-response"
+                            class="g-recaptcha-response"
+                            style="
+                                width: 250px;
+                                height: 40px;
+                                border: 1px solid rgb(193, 193, 193);
+                                margin: 10px 25px;
+                                padding: 0px;
+                                resize: none;
+                                display: none;
+                            "
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="position-relative">
+                    <textarea
+                        class="shadow"
+                        cols="15"
+                        name="content"
+                        placeholder="Nội dung bình luận*"
+                        required=""
+                    ></textarea
+                    ><button title="Bấm để gửi bình luận">
+                        <i class="fa fa-paper-plane font-15x"></i>
+                    </button>
+                </div>
+            </form>
+            <form
+                action="#"
+                class="comment-form reply-form mt-3"
+                data-target=".comment-list"
+            >
+                <input type="hidden" name="action" value="z_do_ajax" />
+                <input type="hidden" name="_action" value="push_comment" />
+                <input type="hidden" name="parent" value="0" />
+                <input type="hidden" name="cat" value="12589" />
+                <input type="hidden" name="p" value="562584" />
+                <input type="hidden" name="re_author" value="" />
+                <input type="hidden" name="user_id" value="0" />
+                <div class="form-row mb-2">
+                    <div class="col-sm">
+                        <input
+                            class="shadow"
+                            type="text"
+                            name="name"
+                            placeholder="Họ tên*"
+                            required=""
+                        />
+                    </div>
+                    <div class="col-sm">
+                        <input
+                            class="shadow"
+                            type="email"
+                            name="email"
+                            placeholder="Email*"
+                            required=""
+                        />
+                    </div>
+                </div>
+                <div
+                    class="g-recaptcha"
+                    data-sitekey="6LcR_ssZAAAAAGzTFejZP4_rI7pBWugtFrJWmmDA"
+                >
+                    <div style="width: 304px; height: 78px">
+                        <div>
+                            <iframe
+                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcR_ssZAAAAAGzTFejZP4_rI7pBWugtFrJWmmDA&amp;co=aHR0cHM6Ly90cnV5ZW52bi5jb206NDQz&amp;hl=en&amp;v=NTa-8tBgsAw62CYTJPliVdrV&amp;size=normal&amp;cb=v03mx0zhabc5"
+                                width="304"
+                                height="78"
+                                role="presentation"
+                                name="a-jn2rni8wh02x"
+                                frameborder="0"
+                                scrolling="no"
+                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                            ></iframe>
+                        </div>
+                        <textarea
+                            id="g-recaptcha-response-1"
+                            name="g-recaptcha-response"
+                            class="g-recaptcha-response"
+                            style="
+                                width: 250px;
+                                height: 40px;
+                                border: 1px solid rgb(193, 193, 193);
+                                margin: 10px 25px;
+                                padding: 0px;
+                                resize: none;
+                                display: none;
+                            "
+                        ></textarea>
+                    </div>
+                    <iframe style="display: none"></iframe>
+                </div>
+                <div class="position-relative">
+                    <textarea
+                        class="shadow"
+                        cols="15"
+                        name="content"
+                        placeholder="Nội dung bình luận*"
+                        required=""
+                    ></textarea
+                    ><button title="Bấm để gửi bình luận">
+                        <i class="fa fa-paper-plane font-15x"></i>
+                    </button>
+                </div>
+            </form>
+            <ul class="comment-list mt-6">
+                <li class="parent" id="comment-16236">
+                    <div class="d-flex">
+                        <div class="mr-2">
+                            <img
+                                alt="Avatar"
+                                src="https://secure.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g"
+                                srcset="
+                                    https://secure.gravatar.com/avatar/?s=120&amp;d=mm&amp;r=g 2x
+                                "
+                                class="avatar avatar-60 photo avatar-default rounded-circle border"
+                                height="60"
+                                width="60"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="w-100">
+                            <div class="bg-eee rounded p-2 mb-1">
+                                <p class="mb-2 font-9x">
+                                    <strong>Quan nhân</strong>&nbsp;&nbsp;
+                                    <span
+                                        class="border border-secondary px-1 font-9x rounded"
+                                        >Ẩn Danh</span
+                                    >&nbsp;&nbsp; <span>4 ngày Trước</span>
+                                </p>
+                                <div class="content-comment lh-16">
+                                    Lôi quấn ghê, mà ra ít chap quá
+                                </div>
+                            </div>
+                            <div class="font-9x text-warning">
+                                <a
+                                    data-re_author="Quan nhân"
+                                    href="#go-reply-16236"
+                                    class="go-reply"
+                                    data-cid="16236"
+                                    ><i class="fa fa-comment"></i> Trả lời</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="sub pt-4" id="sub-of-16236"></ul>
+                </li>
+                <li class="parent" id="comment-16231">
+                    <div class="d-flex">
+                        <div class="mr-2">
+                            <img
+                                alt="Avatar"
+                                src="https://secure.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g"
+                                srcset="
+                                    https://secure.gravatar.com/avatar/?s=120&amp;d=mm&amp;r=g 2x
+                                "
+                                class="avatar avatar-60 photo avatar-default rounded-circle border"
+                                height="60"
+                                width="60"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="w-100">
+                            <div class="bg-eee rounded p-2 mb-1">
+                                <p class="mb-2 font-9x">
+                                    <strong>KhanhHR ZeroTwo</strong>&nbsp;&nbsp;
+                                    <span
+                                        class="border border-secondary px-1 font-9x rounded"
+                                        >Ẩn Danh</span
+                                    >&nbsp;&nbsp; <span>4 ngày Trước</span>
+                                </p>
+                                <div class="content-comment lh-16">
+                                    *** cả mơ
+                                </div>
+                            </div>
+                            <div class="font-9x text-warning">
+                                <a
+                                    data-re_author="KhanhHR ZeroTwo"
+                                    href="#go-reply-16231"
+                                    class="go-reply"
+                                    data-cid="16231"
+                                    ><i class="fa fa-comment"></i> Trả lời</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="sub pt-4" id="sub-of-16231"></ul>
+                </li>
+                <li class="parent" id="comment-16193">
+                    <div class="d-flex">
+                        <div class="mr-2">
+                            <img
+                                alt="Avatar"
+                                src="https://secure.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g"
+                                srcset="
+                                    https://secure.gravatar.com/avatar/?s=120&amp;d=mm&amp;r=g 2x
+                                "
+                                class="avatar avatar-60 photo avatar-default rounded-circle border"
+                                height="60"
+                                width="60"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="w-100">
+                            <div class="bg-eee rounded p-2 mb-1">
+                                <p class="mb-2 font-9x">
+                                    <strong>Phúc</strong>&nbsp;&nbsp;
+                                    <span
+                                        class="border border-secondary px-1 font-9x rounded"
+                                        >Ẩn Danh</span
+                                    >&nbsp;&nbsp; <span>6 ngày Trước</span>
+                                </p>
+                                <div class="content-comment lh-16">
+                                    Hóng quá ad truyện cuốn ghê, khúc cuối quá
+                                    hồi hộp
+                                </div>
+                            </div>
+                            <div class="font-9x text-warning">
+                                <a
+                                    data-re_author="Phúc"
+                                    href="#go-reply-16193"
+                                    class="go-reply"
+                                    data-cid="16193"
+                                    ><i class="fa fa-comment"></i> Trả lời</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="sub pt-4" id="sub-of-16193"></ul>
+                </li>
+            </ul>
+            <a
+                href="#"
+                class="d-block text-white bg-primary p-3 rounded shadow text-center font-semi-bold load-more-comments"
+                data-ppp="10"
+                data-cat="12589"
+                data-page="2"
+                >Xem thêm nhiều bình luận</a
+            >
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small special-color-dark pt-4 bg-dark">
+            <!-- Footer Elements -->
+            <div class="container">
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-fb mx-1">
+                            <i class="fab fa-facebook-f"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1">
+                            <i class="fab fa-twitter"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-gplus mx-1">
+                            <i class="fab fa-google-plus-g"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-li mx-1">
+                            <i class="fab fa-linkedin-in"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-dribbble mx-1">
+                            <i class="fab fa-dribbble"> </i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Social buttons -->
+            </div>
+            <!-- Footer Elements -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                <p style="color: white; display: inline">© 2020 Copyright:</p>
+                <a href="#"> Nguyen Van Ty</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </body>
+</html>
