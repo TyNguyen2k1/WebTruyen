@@ -1,3 +1,7 @@
+body {
+    font-family: "Quicksand", sans-serif !important;
+}
+
 .top-bar .nav-link:hover {
     color: orange !important;
     transition: color 0.3s;
@@ -17,7 +21,6 @@
 
 .truyen {
     margin-top: 3%;
-    font-family: "Quicksand", sans-serif;
 }
 
 .story-item {
