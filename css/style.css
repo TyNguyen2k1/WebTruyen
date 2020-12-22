@@ -21,6 +21,7 @@ body {
 
 .truyen {
     margin-top: 3%;
+    /* background-color: #ffffff; */
 }
 
 .story-item {
@@ -64,6 +65,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+body {
+    background-color: #ebebeb !important;
+}
 
 #myModal {
     padding-top: 180px;
@@ -92,4 +96,34 @@ html {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+}
+
+.modal-open {
+    padding-right: 0px !important;
+}
+
+.name {
+    margin-bottom: 0;
+}
+.text-white a {
+    color: #ffffff;
+}
+
+.truyen .form-row a,
+a:hover,
+a:active {
+    color: inherit !important;
+}
+
+a,
+a:hover,
+a:active {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.main-entry:hover {
+    /* filter: blur(4px);
+    -webkit-filter: blur(4px); */
+    /* background-color: rgba(0, 0, 0, 0.4); */
 }
